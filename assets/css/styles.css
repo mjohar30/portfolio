@@ -2,9 +2,72 @@ h1,h2,h3{
   text-align: center;
 }
 
+section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#hero {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#hero, #about{
+  height: 90vh;
+}
+
+.hero__bg{
+  background-image: url('/assets/images/hero.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.hero__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  z-index: 2;
+  color: white;
+}
+
+.hero__content > * {
+  margin: 14px;
+}
+
+.hero__content-description * {
+  margin: 16px 0px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#hero > .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.hero__image{
+  object-fit: cover;
+  width: 335px;
+  height: 335px;
+  border-radius: 110px;
+}
+
 .hero__content, .about__content, .experience, .projects__content{
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -14,7 +77,9 @@ h1,h2,h3{
   width: 50%;
 }
 
+
 .card {
   margin-right: auto;
   margin-left: auto;
 }
+
