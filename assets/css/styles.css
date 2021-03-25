@@ -1,0 +1,20 @@
+h1,h2,h3{
+  text-align: center;
+}
+
+.hero__content, .about__content, .experience, .projects__content{
+  display: flex;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+.experience__content, .experience__courses, .projects__content > div {
+  width: 50%;
+}
+
+.card {
+  margin-right: auto;
+  margin-left: auto;
+}
