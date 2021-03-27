@@ -43,21 +43,6 @@ section{
   margin: 16px 0px;
 }
 
-.container {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#hero > .container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80vh;
-}
-
 .hero__image{
   object-fit: cover;
   width: 335px;
@@ -65,16 +50,42 @@ section{
   border-radius: 110px;
 }
 
-.hero__content, .about__content, .experience, .projects__content{
+#about > h2{
+  margin: 10vh 0;
+}
+
+.about__content{
+  width: 65%;
+  height: 50%;
+  justify-content: space-around;
+}
+
+.about__content > * {
+  width: 40%;
+}
+
+.about__quote > h4, .about__description{
+  line-height: 2.5;
+}
+
+.content-center{
   display: flex;
-  /* width: 1000px; */
   margin-right: auto;
   margin-left: auto;
   align-items: center;
 }
 
+#experience{
+  justify-content: space-evenly;
+}
+
+#projects__content {
+  width: 80%;
+  align-items: unset;
+}
+
 .experience__content, .experience__courses, .projects__content > div {
-  width: 50%;
+  width: 40%;
 }
 
 
