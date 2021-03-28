@@ -79,6 +79,10 @@ section{
   justify-content: space-evenly;
 }
 
+#projects > h2 {
+  margin: 10vh 0 5vh;
+}
+
 #projects__content {
   width: 80%;
   align-items: unset;
