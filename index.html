@@ -14,18 +14,19 @@
   <link
   rel="shortcut icon"
   type="image/icon"
-  href="assets/logo/favicon.png"
+  href="assets/logo/logo.png"
   />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <title>Mario Johar - dev</title>
 </head>
-<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="57">
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="5">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/logo/logo.png" alt="Logo de https://mariojohar.dev" height="50">
+        <!-- Mario Johar -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,9 +44,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -93,19 +91,46 @@
     <div class="experience__content">
       <h2>Experience</h2>
       <div class="experience__content__card">
-
-      </div>
-    </div>
-    <div class="experience__courses">
-      <h2>Courses</h2>
-      <div class="experience__courses__card">
-
+        <ul class="timeline">
+          <li>
+            <h4>Front-End Developer</h4>
+            <div class="timeline__job">
+              <i>Bluetab Solutions / Walmart Mexico</i>
+              <i>October 2019 - Present</i>
+            </div>            
+            <p class="timeline__description">
+              I am the front-end technical leader of different web dashboards that Walmart managers use to visualize high-level 
+              reports with different KPIs for more trustworthy decision-making at the industry level, among others.
+              <br>
+              I have led at most 3 people in the front end team and I got constant communication with my 
+              Product Owner and my Scrum Master.
+              <br>
+              I developed the initial version of the automatic daily and scheduled mailing.
+            </p>
+          </li>
+          <li>
+            <h4>Web Developer</h4>
+            <div class="timeline__job">
+              <i>Plataformas Inteligentes GP</i>
+              <i>May 2019 - July 2019</i>
+            </div>
+            <p class="timeline__description">
+              Developer in the "Elite" project, a mobility app.
+              <br>
+              I used Firebase Cloud Functions with node.js and javascript to handle the actions to take at the end of the journey in the application.
+              <br>
+              I used SOAP services to make a connection that allows us to make automatic invoices.
+              <br>
+              I used HTTP requests and triggers to use and manipulate the Firebase Realtime Database.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
   <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div id="projects__content" class="content-center row row-cols-1 row-cols-md-2 g-4">
+    <div id="projects__content" class="content-center row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="assets/images/project-platziconf-store.png" class="card-img-top" alt="...">
@@ -117,6 +142,20 @@
             </p>
             <a href="https://platzi-conf-merch-hooks.firebaseapp.com" class="btn btn-primary">Demo</a>
             <a href="https://github.com/mjohar30/platzi-conf-merch-hooks" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/images/project-platzi-games.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Rick and Morty</h4>
+            <p class="card-text">
+              Platzi Games is a portal dedicated to publishing the latest news about the gaming world. 
+              Functions, variables, and conditionals were used with Sass to reuse code and organize it optimally.
+            </p>
+            <a href="#" class="btn btn-primary disabled">Demo</a>
+            <a href="https://github.com/mjohar30/rick-and-morty-hooks" class="btn btn-primary">Code</a>
           </div>
         </div>
       </div>
@@ -136,47 +175,6 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/images/project-platzi-games.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Platzi Games</h4>
-            <p class="card-text">
-              Platzi Games is a portal dedicated to publishing the latest news about the gaming world. 
-              Functions, variables, and conditionals were used with Sass to reuse code and organize it optimally.
-            </p>
-            <a href="#" class="btn btn-primary disabled">Demo</a>
-            <a href="https://github.com/mjohar30/platzi-games" class="btn btn-primary">Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/images/project-platziconf-hawaii.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Platzi conf Hawaii</h4>
-            <p class="card-text">
-              Landing page responsive to present a fictional Platzi conference. 
-              Bootstrap elements like navbar, cards, forms, and modals were used.
-            </p>
-            <a href="https://mjohar30.github.io/platziconf-hawaii/" class="btn btn-primary">Demo</a>
-            <a href="https://github.com/mjohar30/platziconf-hawaii" class="btn btn-primary">Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/images/project-bojackSays.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">BojackSays</h4>
-            <p class="card-text">
-              Random messages based on Netflix series Bojack Horseman that you can use in your favourite command-line interface (CLI).
-            </p>
-            <a href="https://www.npmjs.com/package/bojackhorseman-random-msg" class="btn btn-primary">Go to npmjs.com</a>
-            <a href="https://github.com/mjohar30/bojackhorseman-random-msg" class="btn btn-primary">Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
           <img src="assets/images/project-zombiesEE.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title">Zombies EE</h4>
@@ -187,12 +185,25 @@
       </div>
     </div>
   </section>
-  <section id="contact" class="contact">
+  <section id="contact" class="content-center">
     <h2>Contact me</h2>
-    <p>hola@mariojohar.dev</p>
+    <p>If you're interested in my profile, you want to collaborate in a project or you want to 
+      create something new together you can send me a message in:</p>
     <div class="contact__social">
-
+      <div>
+        <a href="https://twitter.com/JoharGp" target="_blank" class="contact__social-link twitter"></a>
+        <p>@JoharGp</p>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/mariojohar/" target="_blank" class="contact__social-link linkedin"></a>
+        <p>in/mariojohar</p>
+      </div>
     </div>
   </section>
+  <footer class="footer">
+    <h6>
+      © Copyright Mario Johar.
+    </h6>
+  </footer>
 </body>
 </html>

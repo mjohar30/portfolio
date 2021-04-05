@@ -78,6 +78,7 @@ h1,h2,h3{
 
 .experience__content{
   margin-top: 14vh;
+  padding-bottom: 5vh;
 }
 
 .experience__content > h2 {
@@ -130,6 +131,7 @@ h1,h2,h3{
 
 #projects{
   padding-top: 30px;
+  background-color: #f6f8fb;
 }
 
 #projects > h2 {
@@ -139,13 +141,169 @@ h1,h2,h3{
 #projects__content {
   width: 80%;
   align-items: unset;
+  padding-bottom: 10vh;
 }
 
 .experience__content, .experience__courses, .projects__content > div {
-  width: 40%;
+  width: 55%;
 }
 
 .card {
   margin-right: auto;
   margin-left: auto;
+}
+
+#contact {
+  flex-direction: column;
+  background-color: #212529;
+  color: white;
+}
+
+#contact > * {
+  margin: 25px 0;
+}
+
+#contact > h2 {
+  margin-top: 50px;
+}
+
+#contact > p {
+  width: 40%;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.contact__social{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+  margin-bottom: 50px !important;
+  text-align: center;
+}
+
+.contact__social-link{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  background-size: 45px 45px;
+  color: black;
+}
+
+.contact__social-link.linkedin{
+  background-image: url(../images/social-linkedin.svg);
+}
+
+.contact__social-link.twitter{
+  background-image: url(../images/social-twitter.svg);
+}
+
+.contact__social > div > p {
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 1200px){
+  .hero__content-description{
+    width: 30vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .about__content{
+    width: 90%;
+  }
+  .experience__content{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hero__content{
+    flex-direction: column-reverse;
+    top: 55%;
+  }
+  .hero__content-description{
+    text-align: center;
+  }
+  .hero__image{
+    width: 65%;
+    height: 65%;
+  }
+  .experience__content{
+    width: 95%;
+  }
+  .timeline:before{
+    left: 19px;
+  }
+  .timeline > li {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .timeline > li:before {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero__image{
+    width: 72%;
+    height: 72%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .timeline__job {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .about__content{
+    flex-direction: column;
+  }
+  .about__content > * {
+    width: 100%;
+  }
+  .about__quote{
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 20px;
+  }
+  .about__quote > h4 {
+    line-height: 1.5;
+  }
+  
+  #contact > p {
+    width: 80%;
+  }
+  .contact__social{
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  #projects__content{
+    width: 90%;
+  }
+  .hero__image{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .hero__content-description{
+    margin: 0;
+  }
 }
