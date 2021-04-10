@@ -47,6 +47,10 @@ h1,h2,h3{
   border-radius: 110px;
 }
 
+.btn-info{
+  color: white;
+}
+
 #about > h2{
   margin: 10vh 0;
 }
@@ -203,6 +207,10 @@ h1,h2,h3{
   margin-top: 1rem;
 }
 
+/* .contact__social > div:hover {
+  color: #00F0FF;
+} */
+
 .footer {
   text-align: center;
   font-weight: bold;
@@ -268,7 +276,7 @@ h1,h2,h3{
 
 @media screen and (max-width: 480px){
   .about__content{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .about__content > * {
     width: 100%;
